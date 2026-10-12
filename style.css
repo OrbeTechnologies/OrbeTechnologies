@@ -449,6 +449,149 @@ p {
   color: #172130;
 }
 
+.bloco-fundador {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 18% 55%, rgba(28, 82, 152, 0.16), transparent 33%),
+    var(--fundo-alternado);
+}
+
+.fundador-grade {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: clamp(60px, 10vw, 145px);
+}
+
+.fundador-retrato {
+  position: relative;
+  width: min(100%, 430px);
+  margin: 0 auto;
+}
+
+.fundador-foto-palco {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  overflow: hidden;
+  place-items: center;
+  border: 1px solid rgba(142, 187, 245, 0.23);
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(48, 120, 204, 0.23), transparent 54%),
+    linear-gradient(155deg, #111d2c, #080c13 72%);
+  isolation: isolate;
+}
+
+.fundador-foto-palco::before,
+.fundador-foto-palco::after {
+  position: absolute;
+  z-index: -1;
+  width: 315px;
+  height: 315px;
+  border: 1px solid rgba(111, 174, 250, 0.16);
+  border-radius: 50%;
+  content: "";
+}
+
+.fundador-foto-palco::after {
+  width: 405px;
+  height: 405px;
+  border-color: rgba(111, 174, 250, 0.09);
+}
+
+.fundador-anel {
+  position: absolute;
+  z-index: 2;
+  width: 108%;
+  height: 1px;
+  transform: rotate(-35deg);
+  background: linear-gradient(90deg, transparent, rgba(40, 132, 255, 0.82), transparent);
+  box-shadow: 0 0 22px rgba(44, 136, 255, 0.32);
+  pointer-events: none;
+}
+
+.fundador-anel-interno {
+  width: 88%;
+  transform: rotate(35deg);
+  opacity: 0.45;
+}
+
+.fundador-foto {
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 55%;
+  transform: scale(1.7);
+  transform-origin: center top;
+  filter: saturate(0.92) contrast(1.03);
+  mask-image: linear-gradient(#000 82%, transparent 100%);
+}
+
+.fundador-anel {
+  z-index: 0;
+}
+
+.fundador-selo {
+  position: absolute;
+  z-index: 3;
+  right: 17px;
+  bottom: 16px;
+  padding: 10px 13px;
+  border: 1px solid rgba(174, 207, 247, 0.28);
+  background: rgba(7, 13, 22, 0.77);
+  color: #9bb5d4;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.fundador-selo b {
+  color: #e1efff;
+  font-weight: 500;
+}
+
+.fundador-retrato figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 14px;
+  font-size: 0.91rem;
+  font-weight: 600;
+}
+
+.fundador-retrato figcaption span {
+  color: #929cad;
+  font-size: 0.77rem;
+  font-weight: 400;
+}
+
+.fundador-texto h2 {
+  font-size: clamp(3.4rem, 6vw, 5.3rem);
+}
+
+.fundador-texto > p:not(.sobretitulo) {
+  max-width: 570px;
+  color: var(--texto-suave);
+  font-size: 0.97rem;
+}
+
+.fundador-texto .fundador-lead {
+  margin-top: 24px;
+  color: #e0e6ef;
+  font-size: 1.08rem;
+}
+
+.fundador-texto .link-seta {
+  margin-top: 15px;
+}
+
 .bloco-solucoes {
   background:
     radial-gradient(ellipse at 95% 5%, rgba(27, 84, 156, 0.12), transparent 35%),
@@ -918,6 +1061,10 @@ p {
     gap: 48px;
   }
 
+  .fundador-grade {
+    gap: 48px;
+  }
+
   .solucoes-grade {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1039,10 +1186,23 @@ p {
   }
 
   .contexto-grade,
+  .fundador-grade,
   .diferencial-grade,
   .duvidas-grade {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .fundador-retrato {
+    width: min(100%, 390px);
+  }
+
+  .fundador-foto-palco {
+    min-height: 430px;
+  }
+
+  .fundador-foto {
+    max-height: 430px;
   }
 
   .bloco h2 {
