@@ -1,16 +1,20 @@
-## Hi there 👋
+# ORBE Technologies
 
-<!--
-**OrbeTechnologies/OrbeTechnologies** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Tecnologia com propósito. Feita para pessoas e negócios.**
 
-Here are some ideas to get you started:
+A ORBE Technologies transforma ideias em soluções digitais pensadas para as necessidades reais de cada negócio. Criada por Gabriel Ferreira Leal, fundador e programador, a ORBE busca tornar a tecnologia mais útil e simplificar o dia a dia das empresas.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## O que fazemos
+
+- Sites institucionais e landing pages
+- Sistemas sob medida
+- Aplicativos e integrações
+- Automação de processos e soluções com inteligência artificial
+- Manutenção e evolução de produtos digitais
+
+## Vamos conversar
+
+Tem uma ideia ou um desafio para resolver? Entre em contato:
+
+- [WhatsApp: (42) 99817-1396](https://wa.me/5542998171396)
+- [technologiesorbe@gmail.com](mailto:technologiesorbe@gmail.com)
